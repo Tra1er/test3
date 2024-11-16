@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleach - Odcinki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .episode-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .episode-list button {
+            background-color: #1e88e5;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+        }
+        .episode-list button:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bleach - Odcinki 1-7</h1>
+    <div class="episode-list">
+        <button onclick="goToEpisode('https://mp4upload.com/embed-8j8cadj9zzrz.html')">Odcinek 1</button>
+        <button onclick="goToEpisode('https://mp4upload.com/embed-0gor2gyn599r.html')">Odcinek 2</button>
+        <button onclick="goToEpisode('https://mp4upload.com/embed-kt5ioqqaoxfu.html')">Odcinek 3</button>
+        <button onclick="goToEpisode('https://mp4upload.com/embed-tan6c1l9izsl.html')">Odcinek 4</button>
+        <button onclick="goToEpisode('https://mp4upload.com/embed-tprqla7ozht5.html')">Odcinek 5</button>
+        <button onclick="goToEpisode('https://mp4upload.com/embed-m6p7gg6f7m4l.html')">Odcinek 6</button>
+        <button onclick="goToEpisode('https://mp4upload.com/embed-qauzvtoonzi1.html')">Odcinek 7</button>
+    </div>
+
+    <script>
+        function goToEpisode(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
